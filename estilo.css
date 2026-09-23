@@ -1,0 +1,658 @@
+/* CONFIGURAÇÕES GERAIS */
+
+/* Remove margens e espaçamentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+/* Remove configurações padrão dos links */
+a {
+    color: inherit;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    background-color: #000;
+    padding: 0.1rem 1rem;
+}
+
+/* Organização do menu */
+
+nav {
+    max-width: 1400px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+/* Logo */
+.logo img {
+    height: 170px;
+    width: auto;
+    display: block;
+}
+
+/* Lista do menu */
+nav ul {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+/* Links do menu */
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Efeito ao passar o mouse */
+nav a:hover {
+    color: #60a5fa;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 70vh;
+    padding: 4rem 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: linear-gradient(135deg, #101828, #000);
+    color: white;
+}
+
+/* Conteúdo do Hero */
+.hero-conteudo {
+    max-width: 800px;
+}
+
+/* Texto pequeno acima do título */
+.subtitulo {
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    color: #60a5fa;
+}
+
+/* Título principal */
+.hero h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+/* Texto do Hero */
+.hero p {
+    max-width: 650px;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+
+/* BOTÃO */
+
+.botao {
+    display: inline-block;
+    width: fit-content;
+
+    background-color: #2563eb;
+    color: white;
+
+    padding: 10px 20px;
+
+    text-decoration: none;
+}
+
+/* Efeito do botão */
+.botao:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* SERVIÇOS */
+
+.servicos {
+    padding: 5rem 1.5rem;
+    text-align: center;
+}
+
+/* Título dos serviços */
+.servicos h2 {
+    margin-bottom: 1rem;
+}
+
+/* Descrição da seção */
+.servicos .descricao {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #666;
+}
+
+/* Área que contém os cards */
+.servicos-container {
+    max-width: 1100px;
+    margin: 3rem auto 0;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Cada card de serviço */
+.card {
+    padding: 2rem;
+
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+/* Título dos cards */
+.card h3 {
+    margin-bottom: 1rem;
+}
+
+/* Texto dos cards */
+.card p {
+    color: #666;
+}
+
+
+/* SOBRE A TECH IA */
+
+.sobre-resumo {
+    padding: 6rem 1.5rem;
+
+    text-align: center;
+
+    background-color: #f5f5f5;
+}
+
+/* Conteúdo da seção */
+.sobre-resumo > div {
+    max-width: 750px;
+    margin: auto;
+}
+
+/* Título da seção */
+.sobre-resumo h2 {
+    font-size: 2rem;
+    line-height: 1.3;
+
+    margin-bottom: 1.5rem;
+}
+
+/* Texto da seção */
+.sobre-resumo p:not(.subtitulo) {
+    color: #555;
+    line-height: 1.8;
+
+    margin-bottom: 2.5rem;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background-color: #101828;
+    color: white;
+
+    text-align: center;
+
+    padding: 2rem 1rem;
+}
+
+
+/* TELAS MAIORES */
+
+@media (min-width: 768px) {
+
+    /* Menu em linha */
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* Links do menu em linha */
+    nav ul {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+
+    /* Hero maior no computador */
+    .hero {
+        padding: 7rem 3rem;
+    }
+
+    /* Título maior */
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+
+    /* Três cards lado a lado */
+    .servicos-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    /* Título da seção Sobre */
+    .sobre-resumo h2 {
+        font-size: 2.5rem;
+    }
+
+}
+
+/* PAG 2*/
+/* Espaçamento e fundo da parte inicial */
+.sobre-hero {
+    padding: 4rem 1.5rem;
+    background-color: #f5f5f5;
+}
+
+/* Tamanho e espaço do título */
+.sobre-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Espaçamento da seção "Quem somos" */
+.quem-somos {
+    padding: 4rem 1.5rem;
+}
+
+/* Organiza missão e visão em blocos */
+.missao-visao {
+    padding: 4rem 1.5rem;
+    display: grid;
+    gap: 2rem;
+}
+
+/* Seção dos valores */
+.valores {
+    padding: 4rem 1.5rem;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+/* Organiza os valores em blocos */
+.valores-container {
+    display: grid;
+    gap: 2rem;
+}
+
+/* Seção final com o botão de contato */
+.sobre-contato {
+    padding: 4rem 1.5rem;
+    text-align: center;
+}
+
+
+/* SOBRE NÓS - DESKTOP */
+
+/* Regras aplicadas em telas maiores */
+@media (min-width: 768px) {
+
+    /* Aumenta o espaço da parte inicial */
+    .sobre-hero {
+        padding: 5rem 3rem;
+    }
+
+    /* Coloca missão e visão lado a lado */
+    .missao-visao {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    /* Coloca os valores em três colunas */
+    .valores-container {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1100px;
+        margin: auto;
+        text-align:  center;
+    }
+
+}
+/* pag 3 */
+
+
+/* Parte inicial da página */
+.servicos-hero {
+    padding: 4rem 1.5rem;
+    background-color: #f5f5f5;
+}
+
+/* Título principal */
+.servicos-hero h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+/* Texto de apresentação */
+.servicos-hero p:not(.subtitulo) {
+    max-width: 700px;
+    color: #555;
+}
+
+
+/* LISTA DE SERVIÇOS*/
+
+/* Espaçamento da seção */
+.lista-servicos {
+    padding: 4rem 1.5rem;
+}
+
+/* Texto abaixo do título */
+.lista-servicos > p {
+    color: #666;
+    margin-bottom: 3rem;
+}
+
+/* Organiza os serviços */
+.servicos-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+/* Cada serviço */
+.servico {
+    padding: 2rem;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+/* Título do serviço */
+.servico h3 {
+    margin-bottom: 1rem;
+}
+
+/* Descrição do serviço */
+.servico p {
+    color: #666;
+}
+
+
+/*CONTATO*/
+
+/* Parte final da página */
+.servicos-contato {
+    padding: 5rem 1.5rem;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+/* Espaço do título */
+.servicos-contato h2 {
+    margin-bottom: 1rem;
+}
+
+/* Espaço do texto */
+.servicos-contato p {
+    max-width: 650px;
+    margin: 0 auto 2rem;
+    color: #555;
+}
+
+
+/* SERVIÇOS - DESKTOP */
+/* 
+   Aplica essas regras somente em telas maiores,
+   como computadores. Isso deixa o site responsivo,
+   adaptando o conteúdo para telas maiores.
+*/
+@media (min-width: 768px) {
+
+    /* 
+       Aumenta o espaço da apresentação,
+       aproveitando melhor o tamanho da tela.
+    */
+    .servicos-hero {
+        padding: 5rem 3rem;
+    }
+
+    /* 
+       Aumenta o título no computador
+       para melhorar a leitura e o destaque.
+    */
+    .servicos-hero h1 {
+        font-size: 3.5rem;
+    }
+
+    /* Cria 3 colunas para os serviços,
+       aproveitando o espaço maior da tela.*/
+    .servicos-grid {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1100px;
+        margin: auto;
+    }
+
+}
+/* pag 4 */
+/* Página Contato */
+
+.contato-hero {
+    padding: 4rem 1.5rem;
+    background-color: #f5f5f5;
+}
+
+.contato-hero h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.contato-hero p:not(.subtitulo) {
+    max-width: 700px;
+    color: #555;
+}
+
+
+/* Área de contato */
+
+.contato-area {
+    padding: 4rem 1.5rem;
+
+    display: grid;
+    gap: 3rem;
+}
+
+.contato-info {
+    max-width: 600px;
+}
+
+.contato-info h2 {
+    margin-bottom: 1rem;
+}
+
+.contato-info p {
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+
+/* Formulário */
+
+.contato-form {
+    max-width: 600px;
+}
+
+.contato-form h2 {
+    margin-bottom: 1.5rem;
+}
+
+.contato-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-form label {
+    margin-bottom: 0.4rem;
+    font-weight: bold;
+}
+
+.contato-form input,
+.contato-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.2rem;
+
+    border: 1px solid #ccc;
+
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.contato-form textarea {
+    resize: vertical;
+}
+
+.contato-form .botao {
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Desktop */
+
+@media (min-width: 768px) {
+
+    .contato-hero {
+        padding: 5rem 3rem;
+    }
+
+    .contato-hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .contato-area {
+        grid-template-columns: 1fr 1fr;
+
+        max-width: 1100px;
+        margin: auto;
+
+        padding: 5rem 3rem;
+    }
+
+}
+/* pag 5 */
+
+/* Página Cases */
+
+.cases-hero {
+    padding: 4rem 1.5rem;
+    background-color: #f5f5f5;
+}
+
+.cases-hero h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.cases-hero p:not(.subtitulo) {
+    max-width: 700px;
+    color: #555;
+}
+
+
+/* Lista de projetos */
+
+.lista-cases {
+    padding: 4rem 1.5rem;
+}
+
+.lista-cases > p {
+    color: #666;
+    margin-bottom: 3rem;
+}
+
+.cases-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.case {
+    padding: 2rem;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.case h3 {
+    margin-bottom: 1rem;
+}
+
+.case p {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.case span {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+
+/* Chamada para contato */
+
+.cases-contato {
+    padding: 5rem 1.5rem;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.cases-contato h2 {
+    margin-bottom: 1rem;
+}
+
+.cases-contato p {
+    max-width: 650px;
+    margin: 0 auto 2rem;
+    color: #555;
+}
+
+
+/* Desktop */
+
+@media (min-width: 768px) {
+
+    .cases-hero {
+        padding: 5rem 3rem;
+    }
+
+    .cases-hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .cases-grid {
+        grid-template-columns: repeat(3, 1fr);
+
+        max-width: 1100px;
+        margin: auto;
+    }
+
+}
